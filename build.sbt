@@ -19,6 +19,8 @@ scalaVersion := "2.10.4"
 libraryDependencies ++= Seq(
   "org.apache.curator" % "curator-framework" % "2.7.1",
   "org.apache.curator" % "curator-recipes" % "2.7.1",
+  "org.apache.hadoop" % "hadoop-core" % "1.2.1",
+  "org.apache.hbase" % "hbase" % "0.90.4",
   "org.json4s" %% "json4s-native" % "3.2.10",
   "org.json4s" %% "json4s-jackson" % "3.2.10",
   "org.mongodb" % "casbah_2.10" % "2.7.3",
@@ -31,7 +33,9 @@ libraryDependencies ++= Seq(
 resolvers ++= Seq(
   "Akka Repository" at "http://repo.akka.io/releases/",
   "Typesafe repository" at "http://repo.typesafe.com/typesafe/releases/",
-  "Sonatype OSS Snapshots" at "https://oss.sonatype.org/content/repositories/snapshots"
+  "Sonatype OSS Snapshots" at "https://oss.sonatype.org/content/repositories/snapshots",
+  "Apache HBase" at "https://repository.apache.org/content/repositories/releases",
+  "Thrift" at "http://people.apache.org/~rawson/repo/"
 )
 
 mainClass in assembly := Some("com.iflytek.url.filterWords")
