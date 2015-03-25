@@ -21,6 +21,8 @@ libraryDependencies ++= Seq(
   "org.apache.curator" % "curator-recipes" % "2.7.1",
   "org.apache.hadoop" % "hadoop-core" % "1.2.1",
   "org.apache.hadoop" % "hadoop-common" % "2.3.0",
+  "org.apache.hadoop" % "hadoop-client" % "2.3.0",
+  "org.apache.hadoop" % "hadoop-streaming" % "2.3.0",
   "org.apache.hbase" % "hbase-client" % "0.96.1.1-hadoop2",
   "org.apache.hbase" % "hbase-server" % "0.96.1.1-hadoop2",
   "org.apache.hbase" % "hbase-common" % "0.96.1.1-hadoop2",
