@@ -16,7 +16,7 @@ object client extends App {
   val QUORUM = "bd-002,bd-003,bd-004"
   val CLIENTPORT = "2181"
   val configuration = HBaseConfiguration.create()
-  val MASTER = "bd-001:60000"
+  val MASTER = "192.168.86.41:60000"
   configuration.set("hbase.zookeeper.property.clientPort", CLIENTPORT)
   configuration.set("hbase.zookeeper.quorum", QUORUM)
   configuration.set("hbase.master", MASTER)
@@ -35,7 +35,6 @@ object client extends App {
         }
       //hBaseAdmin.createTable(table) //创建一个表
         println(hBaseAdmin.listTableNames())
-        hBaseAdmin.close()
         println("创建表成功!")
      // }
     } catch {
