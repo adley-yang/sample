@@ -46,7 +46,7 @@ resolvers ++= Seq(
   "Thrift" at "http://people.apache.org/~rawson/repo/"
 )
 
-mainClass in assembly := Some("com.iflytek.url.filterWords")
+mainClass in assembly := Some("com.demo.hbase.client")
 
 assemblyOption in packageDependency ~= {
   _.copy(appendContentHash = true)
@@ -62,11 +62,16 @@ excludedJars in assembly <<= (fullClasspath in assembly) map { cp =>
     x.data.getName.matches(".*kryo-2.21.*")||
     x.data.getName.matches(".*minlog.*")||
     x.data.getName.matches(".*commons-beanutils.*")||
-    x.data.getName.matches(".*commons-logging.*")||
+    x.data.getName.matches(".*hadoop-core-1.2.1.*")||
     x.data.getName.matches(".*jcl-over-slf4j.*")||
-    x.data.getName.matches(".*slf4j-api-1.7.2.*")||
-    x.data.getName.matches(".*commons-codec-1.9.*")||
-    x.data.getName.matches(".*slf4j-api-1.7.5.*")
+    x.data.getName.matches(".*servlet-api-2.5.jar.*")||
+    x.data.getName.matches(".*jsp-api-2.1-6.1.14.jar.*")||
+    x.data.getName.matches(".*jsp-api-2.0.jar.*")||
+    x.data.getName.matches(".*servlet-api-2.5-20081211.jar.*")||
+    x.data.getName.matches(".*stax-api-1.0.1.jar.*")||
+    x.data.getName.matches(".*hadoop-yarn-api-2.3.0.jar.*")||
+    x.data.getName.matches(".*jsp-2.1-6.1.14.jar.*")||
+    x.data.getName.matches(".*servlet-api-2.5-6.1.14.*")
   }
 }
     
