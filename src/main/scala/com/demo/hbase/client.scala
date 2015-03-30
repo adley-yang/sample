@@ -166,4 +166,5 @@ object client extends App {
   getOneDataByRowKey("test_2", "3")
   println("--------------getAllRows: test_2-----------------------------")
   getAllRows("test_2")
+
 }
