@@ -35,7 +35,8 @@ libraryDependencies ++= Seq(
   "com.novus" %% "salat" % "1.9.9",
   "mysql" % "mysql-connector-java" % "5.1.33",
   "org.scalaj" %% "scalaj-http" % "0.3.16",
-  "org.apache.poi" % "poi" % "3.11"
+  "org.apache.poi" % "poi" % "3.11",
+  "org.apache.kafka" % "kafka_2.10" % "0.8.2.1"
 )
 
 resolvers ++= Seq(
