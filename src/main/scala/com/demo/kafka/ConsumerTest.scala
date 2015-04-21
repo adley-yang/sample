@@ -7,11 +7,11 @@ import kafka.utils.Logging
  */
 object ConsumerTest extends App with Logging {
 
-  val consumer = new KafkaConsumer("tcdata", "tcdata_group", "tc6:2189,tc7:2189,tc8:2189/kafka-tc")
+  val consumer = new KafkaConsumer("test", "test_group", "tc6:2189,tc7:2189,tc8:2189/kafka-tc")
 
   def exec(binaryObject: Array[Byte]) = {
     val message = new String(binaryObject)
-    println("consumed message = " + message)
+    println("consumed message = " + message+"----"+System.currentTimeMillis())
     //consumer.close()
   }
 

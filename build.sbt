@@ -14,9 +14,10 @@ name := "sample"
 
 version := "1.0"
 
-scalaVersion := "2.10.4"
+scalaVersion := "2.10.5"
 
 libraryDependencies ++= Seq(
+  "com.typesafe.akka" % "akka-actor_2.10" % "2.3.9",
   "org.apache.curator" % "curator-framework" % "2.7.1",
   "org.apache.curator" % "curator-recipes" % "2.7.1",
   "org.apache.hadoop" % "hadoop-core" % "1.2.1",
@@ -36,7 +37,8 @@ libraryDependencies ++= Seq(
   "mysql" % "mysql-connector-java" % "5.1.33",
   "org.scalaj" %% "scalaj-http" % "0.3.16",
   "org.apache.poi" % "poi" % "3.11",
-  "org.apache.kafka" % "kafka_2.10" % "0.8.2.1"
+  "org.apache.kafka" % "kafka_2.10" % "0.8.2.1",
+  "net.debasishg" % "redisclient_2.10" % "2.15"
 )
 
 resolvers ++= Seq(

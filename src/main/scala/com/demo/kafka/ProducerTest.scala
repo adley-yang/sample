@@ -6,12 +6,12 @@ package com.demo.kafka
  */
 object ProducerTest extends App{
 
-  val producer = new KafkaProducer("tcdata","tc6:9092,tc7:9092,tc8:9092")
+  val producer = new KafkaProducer("test","tc6:9092,tc7:9092,tc8:9092")
 
 
 for(i <- 0 until 100){
-  producer.send("hi,"+i+"~"+System.currentTimeMillis())
-  Thread sleep 1000
+  producer.send("hello,"+i+"~"+System.currentTimeMillis())
+  //Thread sleep 1000
 }
 
 }
