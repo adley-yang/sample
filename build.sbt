@@ -38,7 +38,8 @@ libraryDependencies ++= Seq(
   "org.scalaj" %% "scalaj-http" % "0.3.16",
   "org.apache.poi" % "poi" % "3.11",
   "org.apache.kafka" % "kafka_2.10" % "0.8.2.1",
-  "net.debasishg" % "redisclient_2.10" % "2.15"
+  "net.debasishg" % "redisclient_2.10" % "2.15",
+  "redis.clients" % "jedis" % "2.7.0"
 )
 
 resolvers ++= Seq(
